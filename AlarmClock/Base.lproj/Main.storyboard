@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlarmClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhi-iq-uoc">
+                                <rect key="frame" x="103" y="532" width="186" height="118"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="BYF-uF-Aza"/>
+                                    <constraint firstAttribute="height" constant="118" id="Gk9-2i-MTk"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Set Alarm"/>
+                                <connections>
+                                    <action selector="setAlarm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCf-jq-g9t"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Kf5-Qz-ayF">
+                                <rect key="frame" x="36" y="165" width="320" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="Kcw-2x-ZMC"/>
+                                    <constraint firstAttribute="width" constant="320" id="Yz2-4g-J38"/>
+                                </constraints>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Wn1-VO-e7L">
+                                <rect key="frame" x="156" y="729" width="81" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="11E-rW-IuI"/>
+                                    <constraint firstAttribute="height" constant="35" id="lD0-lz-WWH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TEST"/>
+                                <connections>
+                                    <action selector="didTapTest" destination="BYZ-38-t0r" eventType="touchUpInside" id="BuG-C5-8Wu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nhi-iq-uoc" firstAttribute="top" secondItem="Kf5-Qz-ayF" secondAttribute="bottom" constant="151" id="35J-1k-L5I"/>
+                            <constraint firstItem="Wn1-VO-e7L" firstAttribute="top" secondItem="Nhi-iq-uoc" secondAttribute="bottom" constant="79" id="DdD-sg-H3i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nhi-iq-uoc" secondAttribute="trailing" constant="104" id="I3Z-Dl-3Ur"/>
+                            <constraint firstItem="Wn1-VO-e7L" firstAttribute="top" secondItem="Nhi-iq-uoc" secondAttribute="bottom" constant="79" id="NWX-vf-Tjt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wn1-VO-e7L" secondAttribute="trailing" constant="164" id="PPQ-b8-FoT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kf5-Qz-ayF" secondAttribute="trailing" constant="37" id="YfE-AE-vHY"/>
+                            <constraint firstItem="Wn1-VO-e7L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="erK-dp-imd"/>
+                            <constraint firstItem="Nhi-iq-uoc" firstAttribute="top" secondItem="Kf5-Qz-ayF" secondAttribute="bottom" constant="151" id="leQ-Yi-Ee0"/>
+                            <constraint firstItem="Kf5-Qz-ayF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="mPs-V0-8Mx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wn1-VO-e7L" secondAttribute="bottom" constant="54" id="pNj-TN-Ble"/>
+                            <constraint firstItem="Nhi-iq-uoc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="t1f-V0-y3f"/>
+                            <constraint firstItem="Kf5-Qz-ayF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="zrK-3h-5r2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="roundedCornerButton" destination="Nhi-iq-uoc" id="cWW-3z-p5K"/>
+                        <outlet property="timeField" destination="Kf5-Qz-ayF" id="bsG-NE-BvV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p3j-Ks-uJz">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="51o-hw-Cpq">
+            <objects>
+                <viewController id="p3j-Ks-uJz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKA-Jf-Znv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLk-PN-7AQ">
+                                <rect key="frame" x="93" y="549" width="172" height="40"/>
+                                <color key="backgroundColor" red="0.047058823530000002" green="0.75294117650000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="cVK-y4-vaO"/>
+                                    <constraint firstAttribute="height" constant="40" id="jMz-eU-zx7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLOCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sry-fF-2Fh">
+                                <rect key="frame" x="161" y="589" width="172" height="40"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.32156862749999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Pg-Ga-CX4"/>
+                                    <constraint firstAttribute="width" constant="172" id="KXm-Dx-Wu9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copy of diamond_app_icon.png" highlightedImage="Copy of diamond_app_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-Gc-VU1">
+                                <rect key="frame" x="46" y="259" width="301" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="cQn-br-gDB"/>
+                                    <constraint firstAttribute="height" constant="230" id="fUh-9b-CKj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oxA-CB-coS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lLk-PN-7AQ" firstAttribute="top" secondItem="L2a-Gc-VU1" secondAttribute="bottom" constant="60" id="3Jx-jz-sg2"/>
+                            <constraint firstItem="L2a-Gc-VU1" firstAttribute="leading" secondItem="HKA-Jf-Znv" secondAttribute="leadingMargin" constant="30" id="3s1-Er-VeB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L2a-Gc-VU1" secondAttribute="trailing" constant="30" id="BWM-Fm-JAJ"/>
+                            <constraint firstItem="L2a-Gc-VU1" firstAttribute="top" secondItem="HKA-Jf-Znv" secondAttribute="topMargin" constant="200" id="LXe-3H-Fj0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Sry-fF-2Fh" secondAttribute="bottom" constant="189" id="NGT-gF-GVR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lLk-PN-7AQ" secondAttribute="trailing" constant="112" id="Ufg-sQ-cZe"/>
+                            <constraint firstItem="Sry-fF-2Fh" firstAttribute="leading" secondItem="HKA-Jf-Znv" secondAttribute="leadingMargin" constant="145" id="evU-DR-QCu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sry-fF-2Fh" secondAttribute="trailing" constant="44" id="nM0-g3-zxV"/>
+                            <constraint firstItem="Sry-fF-2Fh" firstAttribute="top" secondItem="lLk-PN-7AQ" secondAttribute="bottom" id="ucY-7H-jAG"/>
+                            <constraint firstItem="lLk-PN-7AQ" firstAttribute="leading" secondItem="HKA-Jf-Znv" secondAttribute="leadingMargin" constant="77" id="vJI-Va-aGs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPE-yw-Mdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103.05343511450381" y="-47.183098591549296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Copy of diamond_app_icon.png" width="768" height="768"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
